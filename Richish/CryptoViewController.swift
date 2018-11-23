@@ -36,7 +36,7 @@ class cryptoViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func eth(_ sender: UIButton) {
+    @IBAction func eth(_ sender: UIButton) {//
         cryptoViewControllerDelegate?.userChosenCrypto(crypto: "ETHUSD")
         self.dismiss(animated: true, completion: nil)
     }
