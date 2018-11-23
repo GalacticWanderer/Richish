@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Richish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="B6A-XF-yvT">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QJ-nb-DM6">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="121.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clove" translatesAutoresizingMaskIntoConstraints="NO" id="EqL-01-eb2">
+                                                <rect key="frame" x="58" y="10" width="239" height="100"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="EqL-01-eb2" secondAttribute="bottom" constant="3.5" id="5G6-4z-zSw"/>
+                                            <constraint firstItem="EqL-01-eb2" firstAttribute="top" secondItem="6QJ-nb-DM6" secondAttribute="topMargin" constant="2" id="Ir9-2H-grn"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="EqL-01-eb2" secondAttribute="trailing" constant="50" id="L0y-9W-FEY"/>
+                                            <constraint firstItem="EqL-01-eb2" firstAttribute="leading" secondItem="6QJ-nb-DM6" secondAttribute="leadingMargin" constant="50" id="Xub-6a-gRe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jK-WV-FLM">
+                                        <rect key="frame" x="0.0" y="126.5" width="355" height="121.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58d-vK-rjQ">
+                                                <rect key="frame" x="94.5" y="42.5" width="166" height="36"/>
+                                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="58d-vK-rjQ" firstAttribute="centerY" secondItem="9jK-WV-FLM" secondAttribute="centerY" id="3ZK-Z1-cVN"/>
+                                            <constraint firstItem="58d-vK-rjQ" firstAttribute="centerX" secondItem="9jK-WV-FLM" secondAttribute="centerX" id="mwc-Mc-FRQ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnf-8m-Rar">
+                                        <rect key="frame" x="0.0" y="253" width="355" height="121"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgP-PC-wSo">
+                                                <rect key="frame" x="17.5" y="-47.5" width="320" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="cgP-PC-wSo" firstAttribute="centerY" secondItem="dnf-8m-Rar" secondAttribute="centerY" id="RFf-eG-BQZ"/>
+                                            <constraint firstItem="cgP-PC-wSo" firstAttribute="centerX" secondItem="dnf-8m-Rar" secondAttribute="centerX" id="tAb-E4-Gno"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxK-fc-fyp">
+                                        <rect key="frame" x="0.0" y="379" width="355" height="121.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPR-26-9ml">
+                                                <rect key="frame" x="145" y="43" width="65" height="36"/>
+                                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="kPR-26-9ml" firstAttribute="centerY" secondItem="LxK-fc-fyp" secondAttribute="centerY" id="Via-yw-FMt"/>
+                                            <constraint firstItem="kPR-26-9ml" firstAttribute="centerX" secondItem="LxK-fc-fyp" secondAttribute="centerX" id="Xsa-SO-5Mu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngR-P0-W4s">
+                                        <rect key="frame" x="0.0" y="505.5" width="355" height="121.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVx-fe-Rl1">
+                                                <rect key="frame" x="51.5" y="37" width="252" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <state key="normal" title="Choose your crypto">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="eCe-49-5W2" kind="show" identifier="cryptoScreen" id="JMI-Hc-0Ea"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PVx-fe-Rl1" firstAttribute="centerY" secondItem="ngR-P0-W4s" secondAttribute="centerY" id="DUm-aM-UWs"/>
+                                            <constraint firstItem="PVx-fe-Rl1" firstAttribute="centerX" secondItem="ngR-P0-W4s" secondAttribute="centerX" id="Lso-rN-EQb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B6A-XF-yvT" secondAttribute="trailing" constant="10" id="0Tj-vv-3Is"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B6A-XF-yvT" secondAttribute="bottom" constant="10" id="KiX-Gc-zWE"/>
+                            <constraint firstItem="B6A-XF-yvT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="aLb-PZ-hah"/>
+                            <constraint firstItem="B6A-XF-yvT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="d5t-NL-Yh9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameOfCrypto" destination="58d-vK-rjQ" id="zQr-By-vEc"/>
+                        <outlet property="pickerView" destination="cgP-PC-wSo" id="UeE-OJ-l5v"/>
+                        <outlet property="price" destination="kPR-26-9ml" id="ZB8-9E-HU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="129.08545727136433"/>
+        </scene>
+        <!--Crypto View Controller-->
+        <scene sceneID="I56-Jh-Xby">
+            <objects>
+                <viewController id="eCe-49-5W2" customClass="cryptoViewController" customModule="Richish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lHE-MU-V7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FDh-pZ-ql0">
+                                <rect key="frame" x="10" y="30" width="355" height="627"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzl-q0-2bQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="202.5"/>
+                                        <color key="backgroundColor" red="1" green="0.7628615326" blue="0.56595960909999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="BTC"/>
+                                        <connections>
+                                            <action selector="btc:" destination="eCe-49-5W2" eventType="touchUpInside" id="kPt-i1-YbL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJH-d3-o36">
+                                        <rect key="frame" x="0.0" y="212.5" width="355" height="202"/>
+                                        <color key="backgroundColor" red="1" green="0.7628615326" blue="0.56595960909999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="LTC"/>
+                                        <connections>
+                                            <action selector="ltc:" destination="eCe-49-5W2" eventType="touchUpInside" id="PIT-D0-bqK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3f-Eq-Vyz">
+                                        <rect key="frame" x="0.0" y="424.5" width="355" height="202.5"/>
+                                        <color key="backgroundColor" red="1" green="0.7628615326" blue="0.56595960909999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                        <state key="normal" title="ETH"/>
+                                        <connections>
+                                            <action selector="eth:" destination="eCe-49-5W2" eventType="touchUpInside" id="odN-7L-mmO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FDh-pZ-ql0" firstAttribute="leading" secondItem="lDI-ba-hjg" secondAttribute="leading" constant="10" id="1lZ-ZN-WKr"/>
+                            <constraint firstItem="FDh-pZ-ql0" firstAttribute="top" secondItem="lDI-ba-hjg" secondAttribute="top" constant="10" id="AsE-nC-E7I"/>
+                            <constraint firstItem="lDI-ba-hjg" firstAttribute="trailing" secondItem="FDh-pZ-ql0" secondAttribute="trailing" constant="10" id="Ljt-hU-9l7"/>
+                            <constraint firstItem="lDI-ba-hjg" firstAttribute="bottom" secondItem="FDh-pZ-ql0" secondAttribute="bottom" constant="10" id="k6C-i9-yhA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lDI-ba-hjg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h61-Br-h2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="129.08545727136433"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clove" width="768" height="768"/>
+    </resources>
+</document>
